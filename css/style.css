@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 a,
 input[type="submit"],
 input[type="button"],
@@ -5,4 +6,155 @@ button{
 	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+body {
+	background: #FFF;
+	color: #848789;
+	font: 400 18px/1.4 'Lato', Arial, sans-serif;
+}
+a{
+	color: #282f35;
+	text-decoration: none;
+}
+a:visited{
+	color: fuchsia;
+}
+a:hover{
+	color: #64C29E;
+}
+h1,h2,h3,h4,h5,h6 {
+	color: #353738;
+	text-transform: uppercase;
+	margin: 0 0 18px;
+}
+p, ul, ol{
+	margin: 0 0 18px;
+}
+.ba-header{
+	height: 100vh;
+	min-height: 300px;
+	padding-top: 30px;
+	background: #F5F5FD url(../img/hero-bg.jpg) 50% 50px no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+.ba-main-menu{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+.ba-main-menu li{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ba-main-menu li a{
+	display: inline-block;
+	font-size: 14px;
+	margin-left: 30px;
+	margin-right: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #4D4959;
+}
+.ba-main-menu li a:hover{
+	color: #64C29E;
+}
+.ba-main-menu li:before{
+	content: ".";
+}
+.ba-main-menu li:first-child:before,
+.ba-main-menu .ba-logo:before,
+.ba-main-menu .ba-logo + li:before{
+	content: "";
+}
+
+.ba-container{
+	margin: 0 auto;
+	max-width: 1024px;
+	padding: 0 20px;
+}
+.ba-teaser{
+	padding: 115px 0;
+	background-color: #fbfbfb;
+}
+.ba-title{
+	text-align: center;
+	padding-top: 75px;
+	margin-top: 0;
+	font-size: 18px;
+	background: 50% 0 no-repeat;
+}
+.ba-title-teaser{
+	background-image: url(../img/cog-icon.png);
+}
+.ba-title-frame{
+	background-image: url(../img/frame-icon.png);
+}
+.ba-title--mech{
+	background-image: url(../img/mech-icon.png);
+}
+.ba-title--fork{
+	background-image: url(../img/front-icon.png);
+}
+/* Bike section */
+.ba-bike{
+	position: relative;
+}
+.ba-bike__thumb{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background: 0 no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+.ba-bike__thumb--r {
+	left: auto;
+	right: 0;
+}
+.ba-bike__thumb-logo{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: 50% no-repeat;
+}
+.ba-bike__body {
+	padding: 40px 40px 80px;
+	position: relative;
+}
+.ba-bike__body :last-child{
+	margin-bottom: 0;
+}
+.ba-bike__body:before{
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 40px;
+	right: 0;
+	margin: auto;
+	width: 50px;
+	height: 2px;
+	background: #bbb;
+}
+.ba-bike__body:after{
+	position: absolute;
+	content: "";
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+	width: 0;
+	height: 0;
+	border: 10px solid ;
+	border-color: #fff transparent transparent;
+}
+.ba-bike__thumb--small {
+	display: block;
+	width: 100%;
 }
