@@ -158,3 +158,77 @@ p, ul, ol{
 	display: block;
 	width: 100%;
 }
+/* Twitter section */
+
+.ba-twitter {
+	padding: 50px 0;
+}
+.ba-tweet {
+	text-align: center;
+}
+.ba-tweet__header{
+	padding-top: 60px;
+	background: url(../img/twitter-bird.png) no-repeat 50% 0;
+
+}
+.ba-tweet__user{
+	font-weight: 700;
+	font-size: 18px;
+}
+.ba-tweet__time{
+	font-weight: 400;
+	color: #848789;
+}
+.ba-tweet__time:before {
+	content: " / ";
+}
+.ba-tweet__text {
+	font-style: italic;
+	font-size: 24px;
+	margin-top: 30px;
+	line-height: 1.8;
+}
+.ba-product {
+	position: relative;
+}
+.ba-product img{
+	display: block;
+	width: 100%;
+}
+.ba-product__overlay{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(100, 194, 158, 0.8);
+	text-align: center;
+	font-size: 0;
+
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s ease-in, visibility .3s ease-in;
+}
+.ba-product:hover .ba-product__overlay{
+	visibility: visible;
+	opacity: 1;
+}
+.ba-product__title{
+	color: #FFF;
+	font-weight: 700;
+	font-size: 14px;
+	background: url(../img/white-bike-icon.png) no-repeat 50% 0;
+	padding-top: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	letter-spacing: 2px;
+
+	transition: opacity .3s ease-in, transform .3s ease-in;
+	opacity: 0;
+	transform: translateY(-100px) rotate(90deg);
+}
+.ba-product:hover .ba-product__title{
+	opacity: 1;
+	transform: translateY(0) rotate(0);
+}
